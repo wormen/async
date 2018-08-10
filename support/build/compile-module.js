@@ -2,8 +2,8 @@
 
 const yargs = require('yargs');
 const fs = require('fs');
-const {transformFile} = require('babel-core');
-const pluginCJS = require('babel-plugin-transform-es2015-modules-commonjs');
+const {transformFile} = require('@babel/core');
+const pluginCJS = require('@babel/plugin-transform-modules-commonjs');
 const pluginModuleExports = require('babel-plugin-add-module-exports');
 
 compileModule(yargs.argv, (err) => {
